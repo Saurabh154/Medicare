@@ -311,6 +311,10 @@ body{
     font-weight: bold;
 }
 
+.add-to-cart-medicine{
+    color: var(--primary-text-color);
+    font-size: 13px;
+}
 .price{
     display: flex;
     align-items: center;
@@ -331,4 +335,22 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+/* payment image */
+.payment-card{
+    background: white;
+    margin-top: 0.6rem;
+    margin-top: 2rem;
+    margin-left: 0.3rem;
+    padding:1rem;
+    padding-bottom: 0;
+    width: 100%;
+}
+.payment-img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    object-fit: cover;
+    align-content: center;
 }
