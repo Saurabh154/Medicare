@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+    --primary-text-color: #24265C;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #F6F7F8;;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,9 +19,12 @@
     text-decoration: none;
 }
 
+
 body{
     margin: 1rem 2rem;
 }
+
+/* Navbar stling from here */
 #header{
     width: 100%;
     display: flex; 
@@ -33,13 +47,11 @@ body{
     align-items: center;
     justify-content: space-center;
     gap: 3rem;
-    /* margin-right: 4rem; */
 }
 
 .logo-icon{
     width: 50px;
     height: 50px;
-    /* background-color: greenyellow; */
 }
 .logo{
     display: flex;
@@ -86,9 +98,7 @@ body{
     border-radius: 50px;
     padding: 2px;
     gap: 12px;
-    /* width:5%; */
     background: white;
-    /* width: 42%; */
     border: none;
 }
 .search-icon{
@@ -144,13 +154,17 @@ body{
     color: black;
 }
 
+/* Banner Styling from here */
+
 .banner{
     background: #9FE870;
     margin-top: 0.6rem;
-    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     /* text-align: left; */
     padding:2rem 3rem;
     padding-bottom: 0;
+    width: 100%;
 }
 .banner-img{
     display: flex;
@@ -158,4 +172,163 @@ body{
     width: 100%;
     object-fit: cover;
     align-content: center;
+}
+
+.inside-image{
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    justify-content: center;  
+}
+
+.image-card{
+    padding: 1.2rem;
+    background-color: var(--background-color);
+    margin-top: 0.56rem;
+    border-radius: 25px;  
+}
+.img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card{
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    /* padding: 0.5rem; */
+    padding-bottom: 0;   
+    border-radius: 4px; 
+}
+
+.card1{
+    background-color: #A0E1E1;
+}
+.card2{
+    background-color: #FFEB68;
+}
+.card3{
+    background-color: rgb(254,192,145);
+}
+.card4{
+    background-color: #FFD6EF;
+}
+.card5{
+    background-color: #92BDF6;
+}
+.card6{
+    background-color: #F9BA51;
+}
+
+.image-text{
+    color: #2A3064;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 0.445rem;
+}
+
+.Todays-deals{
+    display: flex;
+    /* align-items: center; */
+    padding: 1.2rem;
+    margin-top: 0.76rem;
+    background-color: whitesmoke;
+    border-radius: 25px;  
+    justify-content: space-between;
+    color: #252B61;
+}
+.left-text{
+    /* width: 30%; */
+    font-size: 2rem;
+    font-weight: bold;
+}
+.right-text{
+    font-size: 13px;
+    align-content: end;
+}
+
+.medicine-card{
+    background-color: rgb(231, 230, 230);
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.medicine-details{
+    background-color: #fff;
+    padding: 0.7rem;
+    border-radius: 25px;
+}
+
+.datils{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.r-color{
+    color: orangered;
+}
+.medicine-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+.title-name{
+    color: rgb(219, 217, 217);
+}
+.description{
+    margin-top: 6px;
+    width: 70%;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.rating-number{
+    color: rgb(219, 217, 217);
+    font-size: 12px;
+}
+.add-to-cart-medicine{
+    border: 1px solid var(--primary-text-color);
+    border-radius: 50px;
+    padding: 0.3rem;
+    border-color:var(--primary-text-color) ;
+    background-color: #fff;
+    outline: none;
+}
+.original-price{
+    color: rgb(219, 217, 217);
+    font-size: 13px;
+}
+.final-price{
+    color: var(--primary-text-color) ;
+    font-weight: bold;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.med-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 1rem;
+    /* align-content: ; */
+}
+
+.medi-image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
